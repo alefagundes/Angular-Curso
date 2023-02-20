@@ -1,0 +1,11 @@
+<div class="class">
+  <h3>Renderizando condicional</h3>
+  <p *ngIf="name; else nameNotFound">{{ name }}</p>
+  <ng-template #nameNotFound>
+    <div class="notfound">
+      <h2>Name not found</h2>
+    </div>
+  </ng-template>
+
+  <button (click)="onVisible()">Visualizar None</button>
+</div>
