@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Name } from 'src/interfaces/Name';
-import { NameServiceService } from '../name-service.service';
 
 @Component({
   selector: 'app-list-name',
@@ -9,22 +8,11 @@ import { NameServiceService } from '../name-service.service';
 })
 export class ListNameComponent implements OnInit {
   public listName: Array<any> = new Array<any>();
-  constructor(private nameService: NameServiceService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.obterTodosNames();
-  }
+  ngOnInit(): void {}
 
-  public obterTodosNames() {
-    this.nameService
-      .getAll()
-      .then((response) =>
-        response
-          ? (this.listName = response)
-          : (this.listName = new Array<Name>())
-      )
-      .catch((erro) => console.log(erro));
-  }
+  public obterTodosNames() {}
 
   showNames() {
     this.listName = new Array<undefined>();

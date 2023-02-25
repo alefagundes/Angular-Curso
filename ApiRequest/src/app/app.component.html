@@ -1,11 +1,8 @@
-<app-list-name/>
-<app-first-component/>
-<app-parent-data [name] ="userName" [list]="listView"/>
-<app-directives></app-directives>
-<app-if-render/>
-<app-emitter/>
-<h2 *ngIf="agePet > 0">Idade é: {{agePet}}</h2>
-<app-list-render (event)="showAgeAnimal()"/>
-<app-pipes/>
-<p>to way data binding</p>
-<app-two-way-dinds/>
+<h1>Testando o routing do Angular router</h1>
+<!-- //estrategia utilizada para fazer a navegação entre páginas. -->
+<nav>
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/list']">List</a>
+</nav>
+
+<router-outlet/>

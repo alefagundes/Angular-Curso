@@ -1,24 +1,22 @@
 {
-  "names": [
-    {
-      "id": 1,
-      "name": "Alessandro test 4",
-      "Profissao": "Developper"
-    },
+  "animals": [
     {
       "id": 2,
-      "name": "Alessandro test 2",
-      "Profissao": "Developper hoje"
+      "name": "teste 2",
+      "type": "bufalo",
+      "age": 5
     },
     {
       "id": 3,
-      "name": "Alessandro test 1",
-      "Profissao": "Developper amanha"
+      "name": "teste 3",
+      "type": "bufalo",
+      "age": 5
     },
     {
       "id": 4,
-      "name": "Alessandro test",
-      "Profissao": "Developper na sequencia"
+      "name": "teste 4",
+      "type": "bufalo",
+      "age": 5
     }
   ]
 }

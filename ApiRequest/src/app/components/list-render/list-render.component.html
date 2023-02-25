@@ -1,7 +1,13 @@
 <div class="class">
-  <h2>Animais</h2>
+  <h2 *ngIf="nameAnimalchild">Animais: {{nameAnimalchild}}</h2>
+  <button (click)="addAnimal()">Add animal</button>
   <ul *ngFor="let animal of animals">
-    <li>{{ animal.name }}</li>
-    <button (click)="showAge()">Show age</button>
+    <li>
+      <a routerLink="/list/{{ animal.id }}">{{ animal.name }}</a>
+      <button (click)="showAge()">Show age</button>
+      <button (click)="removeAnimal(animal)">remove animal</button>
+        <!-- tes de input e output -->
+  <app-test [nameInput]="animal.name" (nameOutput)="showEventName($event)" />
+    </li>
   </ul>
 </div>

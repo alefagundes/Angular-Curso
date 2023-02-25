@@ -1,0 +1,7 @@
+<p *ngIf="nameInput; else nameNotPass">Hello {{ nameInput }}</p>
+<button (click)="sendEvent(nameInput)">Emitir evento</button>
+<ng-template #nameNotPass>
+  <div class="notfound">
+    <h2>Name not Pass</h2>
+  </div>
+</ng-template>

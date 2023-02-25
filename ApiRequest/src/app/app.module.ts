@@ -15,6 +15,8 @@ import { ChangeNumbersComponent } from './components/change-numbers/change-numbe
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayDindsComponent } from './components/two-way-dinds/two-way-dinds.component';
+import { AnimalsDetailsComponent } from './components/animals-details/animals-details.component';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { TwoWayDindsComponent } from './components/two-way-dinds/two-way-dinds.c
     ListRenderComponent,
     PipesComponent,
     TwoWayDindsComponent,
+    AnimalsDetailsComponent,
+    TestComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
